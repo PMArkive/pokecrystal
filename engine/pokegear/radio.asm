@@ -1520,8 +1520,8 @@ GetBuenasPassword:
 	ld h, [hl]
 	ld l, a
 	call GetPokemonIDFromIndex
-	call GetPokemonName
 	ld [wNamedObjectIndex], a
+	call GetPokemonName
 	ret
 
 .Item:
